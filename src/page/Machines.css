@@ -1,0 +1,94 @@
+#box03{
+    padding: 82px 0 0;
+}
+#box03>h3{
+    text-align: center;
+    font-size: 19px;
+    font-weight: normal;
+    color: #333;
+    padding: 45px 0; 
+}
+#box03>div{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+#box03>div>img{
+    width: 100%;
+}
+
+
+#num{
+    width: 1200px;
+    margin: 0 auto;
+}
+#num>p{
+    font-size: 14px;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #333;
+}
+#num>p>span{
+    color: #000;
+    font-weight: bold;
+    margin: 0 5px;
+}
+#num>ul{
+    color: #333;
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+#num>ul>li{
+    margin-right: 45px;
+    font-size: 12px;
+    line-height: 45px;
+}
+
+
+#machinlist{
+    padding: 45px 0;
+}
+#machinlist>#list{}
+#machinlist>#list>li{
+    width: calc(25% - 1em);
+    margin: 0 0 1em;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+#machinlist>#list>li>figure{}
+#machinlist>#list>li>figure>img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#machinlist>#list>li>figure>figcaption{}
+#machinlist>#list>li>figure>figcaption>dl{}
+#machinlist>#list>li>figure>figcaption>dl>dt{
+    margin-bottom: 30px;
+}
+#machinlist>#list>li>figure>figcaption>dl>dd{
+    margin-bottom: 30px;
+}
+#machinlist>#list>li>figure>figcaption>dl>dd>ins{
+    color: #D12420;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#machinlist>#list>li>figure>figcaption>dl>dd>del{
+    color: #666;
+}
+#machinlist>#list>li>figure>figcaption>dl>dd>button{
+    background-color: #D12420;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,34 @@
+footer{
+    background-color: #63666a;
+    padding: 20px 0;
+    width: 100%;
+    overflow: hidden;
+}
+footer>div{
+    width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 15px;
+    align-items: center;
+}
+
+.left{
+    width: 45%;
+}
+.left>dt{
+    margin-bottom: 5px;
+}
+.left>dd{
+    float: left;
+    margin-right: 5px;
+    
+}
+
+.right{
+    width: 45%;
+}
+.right>dt{}
+.right>dd{}

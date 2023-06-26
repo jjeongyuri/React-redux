@@ -46,3 +46,49 @@
     font-weight: 400;
     font-family: 'Pretendard';
 }
+
+
+/* box02 */
+#box02{
+  position: relative;
+}
+#box02>a>img{
+  width: 100%;
+  background-size: cover;
+}
+#box02 .etc{
+  width: 50%;
+  position: absolute;
+  left: 20%; top: 40%;
+}
+#box02>.etc>h2{
+  font-size: 42px;
+  font-family: MuseoSans;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 50px;
+}
+#box02>.etc>p{
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'MuseoSans';
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+#box02>.etc>p:nth-child(3){
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+#box02>.etc>p>button{
+  background-color: #D12420;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+

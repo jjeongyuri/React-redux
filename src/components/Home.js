@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import { Link } from 'react-router-dom';
 
 
 export default function Home(){
@@ -55,8 +56,11 @@ export default function Home(){
       </Swiper>
         </div>
         <div id="box02">
+            <Link to={"/"}>
+            <img src='../img/box02.gif' alt='머신이미지'/>
+            </Link>
             <div className="etc">
-              <h2></h2>
+              <h2>COFFEE MACHINES</h2>
               <p>
                 COFFEE &amp; <br/>
                 ESSPRESSO <br/>

@@ -1,0 +1,59 @@
+#wishlist{
+    padding: 150px 0 70px;
+    width: 1200px;
+    margin: 0 auto;
+}
+#wishlist>h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #999;
+    margin-bottom: 50px;
+}
+
+.wish{
+    
+}
+.wish>ul{
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    padding: 10px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.wish>ul>li{
+    width: 50%;
+}
+.wish>div{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f7f7f7;
+}
+.wish>div>figure{
+    display: flex;
+    align-items: center;
+}
+.wish>div>figure>img{
+    width: 38px;
+    height: 31px;
+    border: 1px solid #f7f7f7;
+    margin-right: 15px;
+}
+.wish>div>figure>figcaption{
+    width: 90%;
+}
+.wish>div>figure>figcaption>dl{
+    display: flex;
+    justify-content: space-between;
+}
+.wish>div>figure>figcaption>dl>dt{
+    width: 62%;
+}
+.wish>div>figure>figcaption>dl>dd{
+}
+.wish>div>figure>figcaption>dl>dd>button{
+   
+}
