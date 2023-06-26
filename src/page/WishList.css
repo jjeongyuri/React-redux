@@ -2,6 +2,7 @@
     padding: 150px 0 70px;
     width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 #wishlist>h2{
     font-size: 30px;
@@ -13,7 +14,8 @@
 }
 
 .wish{
-    
+    width: 80%;
+    margin: 0 auto 40px;
 }
 .wish>ul{
     border-top: 1px solid #999;
@@ -30,30 +32,66 @@
     width: 100%;
     padding: 15px;
     box-sizing: border-box;
-    border-bottom: 1px solid #f7f7f7;
 }
 .wish>div>figure{
     display: flex;
     align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 15px;
 }
 .wish>div>figure>img{
-    width: 38px;
-    height: 31px;
+    width: 50px;
+    height: 50px;
     border: 1px solid #f7f7f7;
-    margin-right: 15px;
+    padding: 5px;
+    margin-right: 70px;
 }
 .wish>div>figure>figcaption{
     width: 90%;
 }
 .wish>div>figure>figcaption>dl{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .wish>div>figure>figcaption>dl>dt{
-    width: 62%;
+    width: 47%;
 }
 .wish>div>figure>figcaption>dl>dd{
 }
+.wish>div>figure>figcaption>dl>dd:last-child{
+    margin-right: 5px;
+    padding-top: 10px;
+}
 .wish>div>figure>figcaption>dl>dd>button{
-   
+   border: none;
+   font-size: 22px;
+   background-color: #fff;
+   cursor: pointer;
+   color: rgb(228, 116, 116);
+}
+
+.clear{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #999;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+.clear>p{}
+.clear>p>button{
+    position: absolute;
+    right: 11%; bottom: 145px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: rgb(235, 95, 95);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
 }

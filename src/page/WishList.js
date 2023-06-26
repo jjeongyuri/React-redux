@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import './WishList.css';
 import productList from '../product.json';
 import { removeToCart,clearToCart } from '../redux/WishListSlice';
+import {BiTrashAlt} from 'react-icons/bi';
 
 export default function WishList(){
     const {cartProductIds} = useSelector((state)=>state.cart);
@@ -27,7 +28,9 @@ export default function WishList(){
                             <dd>{product.price}</dd>
                             <dd>
                                 <button type='button'
-                                        onClick={()=>dispatch(removeToCart(product.id))}>삭제</button>
+                                        onClick={()=>dispatch(removeToCart(product.id))}>
+                                    <BiTrashAlt/>
+                                </button>
                             </dd>
                         </dl>
                     </figcaption>
@@ -36,6 +39,11 @@ export default function WishList(){
                </div> 
             </div>
             <div className='clear'>
+                <p>
+                    <button type='button'>
+                        전체상품 삭제
+                    </button>
+                </p>
                 <p>장바구니에 담겨있는 상품이 없습니다.</p>
             </div>
         </div>
