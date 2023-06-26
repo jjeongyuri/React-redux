@@ -67,9 +67,11 @@ export default function Home(){
                 MACHINES
               </p>
               <p>탁월한 디자인과 완벽한 커피의 맛</p>
+              <Link to={"/list"}>
               <p>
                   <button>제품보기</button>
               </p>
+              </Link>
             </div>
         </div>
         </>

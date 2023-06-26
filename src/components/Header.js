@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 import {BiCartDownload} from 'react-icons/bi';
 import './Header.css';
+import cartSlice, {cartProductIds} from '../redux/WishListSlice';
+import { useSelector } from "react-redux";
+
 
 export default function Header(){
+   const {cartProductIds} = useSelector((state)=>state.cart);
+   console.log(cartProductIds)
+
+
     return (
         <header>
             <div>
@@ -19,8 +26,10 @@ export default function Header(){
                 </ul>
             </nav>
             <div id="box">
+                <Link to={'/wishlist'}>
                 <BiCartDownload style={{fontSize:25}}/>
-                <span>2</span>
+                <span>{cartProductIds.length}</span>
+                </Link>
             </div>
             </div>
         </header>

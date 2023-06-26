@@ -1,7 +1,15 @@
 import './Machines.css';
 import {BiCheck} from 'react-icons/bi';
+import productList from '../product.json';
+import { addToCart } from '../redux/WishListSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 export default function Machines(){
+    let dispatch = useDispatch();
+    const {cartProductIds} = useSelector((state)=>state.cart)
+    // console.log(cartProductIds)
+    
+
     return (
         <>
         <div id="box03">
@@ -12,7 +20,7 @@ export default function Machines(){
         </div>
         <div id="num">
             <p>상품
-                <span>17</span>
+                <span>{productList.products.length}</span>
                개
             </p>
             <ul>
@@ -25,25 +33,30 @@ export default function Machines(){
             </ul>
             <div id='machinlist'>
                 <ul id="list">
-                    <li>
-                       <figure>
-                         <img src="./img/machines_pic01.jpg" alt=""/>
-                         <figcaption>
-                             <dl>
-                                 <dt>머신이름</dt>
-                                 <dd>
-                                     <del>지워진가격</del>
-                                     <ins>가격
-                                         <span>원</span>
-                                     </ins>
-                                 </dd>
-                                 <dd>
-                                     <button>장바구니</button>
-                                 </dd>
-                             </dl>
-                         </figcaption>
-                        </figure>  
+                {productList.products.map((product)=>(
+                        <li key={product.id}>
+                        <figure>
+                        <img src={product.imageUrl} alt={product.name}/>
+                        <figcaption>
+                            <dl>
+                                <dt>{product.name}</dt>
+                                <dd>
+                                    <del>{product.price}
+                                         원
+                                    </del>
+                                    <ins>{product.ceil}
+                                        <span>원</span>
+                                    </ins>
+                                </dd>
+                                <dd>
+                                    <button type='button'
+                                            onClick={()=>dispatch(addToCart(product.id))}>장바구니</button>
+                                </dd>
+                            </dl>
+                        </figcaption>
+                       </figure> 
                     </li>
+                    ))} 
                 </ul>
             </div>
         </div>

@@ -47,13 +47,16 @@
 #machinlist{
     padding: 45px 0;
 }
-#machinlist>#list{}
+#machinlist>#list{
+    display: flex;
+    flex-wrap: wrap;
+}
 #machinlist>#list>li{
     width: calc(25% - 1em);
-    margin: 0 0 1em;
+    margin: 0 1em 1em 0;
     border: 1px solid #eee;
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     text-align: center;
     box-sizing: border-box;
     font-size: 12px;
@@ -89,6 +92,7 @@
     padding: 14px 40px;
     border-radius: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 

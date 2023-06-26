@@ -5,11 +5,11 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Machines from "./page/Machines";
 import WishList from "./page/WishList";
-// import store from "./store";
+import store from "./store";
 
 function App() {
   return (
-    // <Provider store={store}>
+    <Provider store={store}>
     <BrowserRouter>
       <Header/>
       <Routes>
