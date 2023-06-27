@@ -1,14 +1,15 @@
 import './Machines.css';
 import {BiCheck} from 'react-icons/bi';
 import productList from '../product.json';
-import { addToCart } from '../redux/WishListSlice';
+import { addToCart,sortTo } from '../redux/WishListSlice';
 import { useDispatch, useSelector } from 'react-redux';
+
 
 export default function Machines(){
     let dispatch = useDispatch();
     const {cartProductIds} = useSelector((state)=>state.cart)
     // console.log(cartProductIds)
-    
+    const priceTo = productList.products.price;
 
     return (
         <>
@@ -24,8 +25,8 @@ export default function Machines(){
                개
             </p>
             <ul>
-                <li>낮은가격순
-                    <BiCheck style={{fontSize:15,marginLeft:4}}/>
+                 <li onClick={()=>dispatch(sortTo(productList.products.price))}>낮은가격순
+                 <BiCheck style={{fontSize:15,marginLeft:4}}/>
                 </li>
                 <li>높은가격순
                     <BiCheck style={{fontSize:15,marginLeft:4}}/>

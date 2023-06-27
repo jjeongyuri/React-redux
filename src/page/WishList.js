@@ -36,17 +36,17 @@ export default function WishList(){
                     </figcaption>
                     </figure>
                 ))}
-               </div> 
-            </div>
-            <div className='clear'>
                 <p>
                     <button type='button'
                             onClick={()=>dispatch(clearToCart())}>
                         전체상품 삭제
                     </button>
                 </p>
-                <p>장바구니에 담겨있는 상품이 없습니다.</p>
+               </div> 
             </div>
+            {cartData.length > 1 || <div className='clear'>
+                 <p>장바구니에 담겨있는 상품이 없습니다.</p>
+            </div>}
         </div>
     )
 }

@@ -15,11 +15,14 @@ let cartSlice = createSlice({
         },
         clearToCart(state){
             state.cartProductIds = []
+        },
+        sortTo(state,action){
+            return state.sort((a,b)=>a - b ? 1 : -1)
         }
     }
 })
 
-export let {addToCart,removeToCart,clearToCart} = cartSlice.actions;
+export let {addToCart,removeToCart,clearToCart,sortTo} = cartSlice.actions;
 
 
 export default cartSlice;

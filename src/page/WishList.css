@@ -2,7 +2,6 @@
     padding: 150px 0 70px;
     width: 1200px;
     margin: 0 auto;
-    position: relative;
 }
 #wishlist>h2{
     font-size: 30px;
@@ -32,6 +31,7 @@
     width: 100%;
     padding: 15px;
     box-sizing: border-box;
+    position: relative;
 }
 .wish>div>figure{
     display: flex;
@@ -73,6 +73,17 @@
    cursor: pointer;
    color: rgb(228, 116, 116);
 }
+.wish>div>p>button{
+    position: absolute;
+    right: 0; bottom: -10px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: rgb(235, 95, 95);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
 
 .clear{
     width: 80%;
@@ -82,16 +93,4 @@
     padding: 15px;
     box-sizing: border-box;
     font-size: 22px;
-}
-.clear>p{}
-.clear>p>button{
-    position: absolute;
-    right: 11%; bottom: 145px;
-    border: none;
-    border-radius: 10px;
-    padding: 5px 15px;
-    background-color: rgb(235, 95, 95);
-    color: #fff;
-    font-size: 15px;
-    cursor: pointer;
 }
