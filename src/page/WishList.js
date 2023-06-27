@@ -25,7 +25,7 @@ export default function WishList(){
                     <figcaption>
                         <dl>
                             <dt>{product.name}</dt>
-                            <dd>{product.price}</dd>
+                            <dd>{product.ceil}</dd>
                             <dd>
                                 <button type='button'
                                         onClick={()=>dispatch(removeToCart(product.id))}>
@@ -40,7 +40,8 @@ export default function WishList(){
             </div>
             <div className='clear'>
                 <p>
-                    <button type='button'>
+                    <button type='button'
+                            onClick={()=>dispatch(clearToCart())}>
                         전체상품 삭제
                     </button>
                 </p>

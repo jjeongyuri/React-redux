@@ -3,99 +3,106 @@
         {
             "id": "1",
             "name": "(리퍼비시) 일리 Y3.3 캡슐커피머신 [화이트]",
-            "price": "199,000",
-            "ceil":"98,500",
+            "price": 199000,
+            "ceil":98500,
             "imageUrl": "./img/machines_pic01.jpg"
           },
           {
             "id": "2",
             "name": "일리 Y3.3 캡슐커피머신 [옐로우]",
-            "price": "199,000",
-            "ceil":"185,000",
+            "price": 199000,
+            "ceil":185000,
             "imageUrl": "./img/machines_pic02.jpg"
           },
           {
             "id": "3",
             "name": "일리 Y3.3 캡슐커피머신 [그린]",
-            "price": "199,000",
-            "ceil":"185,000",
+            "price": 199000,
+            "ceil":185000,
             "imageUrl": "./img/machines_pic03.jpg"
           },
           {
             "id": "4",
             "name": "일리 Y3.3 캡슐커피머신 [오렌지]",
-            "price": "199,000",
-            "ceil":"185,000",
+            "price": 199000,
+            "ceil":185000,
             "imageUrl": "./img/machines_pic04.jpg"
           },
           {
             "id": "5",
             "name": "Y3.3 캡슐커피머신 [화이트]",
-            "price": "199,000",
-            "ceil":"185,000",
+            "price": 199000,
+            "ceil":185000,
             "imageUrl": "./img/machines_pic05.jpg"
           },
           {
             "id": "6",
             "name": "Y3.3 캡슐커피머신 [레드]",
-            "price": "199,000",
-            "ceil":"185,000",
+            "price": 199000,
+            "ceil":185000,
             "imageUrl": "./img/machines_pic06.jpg"
           },
           {
             "id": "7",
             "name": "Y3.3 캡슐커피머신 [블랙]",
-            "price": "199,000",
-            "ceil":"185,000",
+            "price": 199000,
+            "ceil":185000,
             "imageUrl": "./img/machines_pic07.jpg"
           },
           {
             "id": "8",
             "name": "Y3.3 캡슐커피머신 [라이트블루]",
-            "price": "199,000",
-            "ceil":"185,000",
+            "price": 199000,
+            "ceil":185000,
             "imageUrl": "./img/machines_pic08.jpg"
           },
           {
             "id": "9",
             "name": "일리 X7.1 캡슐커피머신 [블랙]",
-            "price": "387,000",
+            "price": 0,
+            "ceil": 387000,
             "imageUrl": "./img/machines_pic09.jpg"
           },
           {
             "id": "10",
             "name": "일리 X7.1 캡슐커피머신 [화이트]",
-            "price": "387,000",
+            "price": 0,
+            "ceil": 387000,
             "imageUrl": "./img/machines_pic10.jpg"
           },
           {
             "id": "11",
             "name": "일리 X7.1 캡슐커피머신 [레드]",
-            "price": "387,000",
+            "price": 0,
+            "ceil": 387000,
             "imageUrl": "./img/machines_pic11.jpg"
           },
           {
             "id": "12",
             "name": "X1 Anniversary 캡슐커피머신 [아몬드]",
-            "price": "690,000",
+            "price": 0,
+            "ceil": 690000,
             "imageUrl": "./img/machines_pic12.jpg"
           },
           {
             "id": "13",
             "name": "X1 Anniversary 캡슐커피머신 [이녹스]",
-            "price": "790,000",
+            "price": 0,
+            "ceil": 790000,
             "imageUrl": "./img/machines_pic13.jpg"
           },
           {
             "id": "14",
             "name": "X1 Anniversary 캡슐커피머신 [블랙]",
-            "price": "690,000",
+            "price": 0,
+            "ceil": 690000,
             "imageUrl": "./img/machines_pic14.jpg"
           },
           {
             "id": "15",
             "name": "X1 Anniversary 캡슐커피머신 [레드]",
-            "price": "690,000",
+            "price": 0,
+            "ceil": 690000,
             "imageUrl": "./img/machines_pic15.jpg"
           }
     ]

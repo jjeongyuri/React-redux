@@ -41,12 +41,12 @@ export default function Machines(){
                             <dl>
                                 <dt>{product.name}</dt>
                                 <dd>
-                                    <del>{product.price}
+                                    {product.price === 0 || <del>{product.price}
                                          원
-                                    </del>
+                                    </del>}
                                     <ins>{product.ceil}
                                         <span>원</span>
-                                    </ins>
+                                   </ins>
                                 </dd>
                                 <dd>
                                     <button type='button'
