@@ -89,10 +89,11 @@
     text-align: center;
     color: #fff;
     border: none;
-    padding: 14px 40px;
+    padding: 14px;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 

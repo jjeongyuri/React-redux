@@ -1,3 +1,4 @@
+import productList from '../product.json';
 const { createSlice } = require("@reduxjs/toolkit");
 
 let cartSlice = createSlice({
@@ -15,9 +16,6 @@ let cartSlice = createSlice({
         },
         clearToCart(state){
             state.cartProductIds = []
-        },
-        sortTo(state,action){
-            return state.sort((a,b)=>a - b ? 1 : -1)
         }
     }
 })

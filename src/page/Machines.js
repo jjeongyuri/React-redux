@@ -1,7 +1,7 @@
 import './Machines.css';
 import {BiCheck} from 'react-icons/bi';
 import productList from '../product.json';
-import { addToCart,sortTo } from '../redux/WishListSlice';
+import { addToCart,removeToCart } from '../redux/WishListSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 
@@ -9,7 +9,7 @@ export default function Machines(){
     let dispatch = useDispatch();
     const {cartProductIds} = useSelector((state)=>state.cart)
     // console.log(cartProductIds)
-    const priceTo = productList.products.price;
+    // console.log(productList)
 
     return (
         <>
@@ -25,10 +25,10 @@ export default function Machines(){
                개
             </p>
             <ul>
-                 <li onClick={()=>dispatch(sortTo(productList.products.price))}>낮은가격순
+                <li onClick={()=>productList.products.sort((a,b) => a.ceil - b.ceil)}>낮은가격순
                  <BiCheck style={{fontSize:15,marginLeft:4}}/>
                 </li>
-                <li>높은가격순
+                <li onClick={()=>productList.products.sort((a,b) => b.ceil - a.ceil)}>높은가격순
                     <BiCheck style={{fontSize:15,marginLeft:4}}/>
                 </li>
             </ul>
@@ -50,8 +50,10 @@ export default function Machines(){
                                    </ins>
                                 </dd>
                                 <dd>
-                                    <button type='button'
-                                            onClick={()=>dispatch(addToCart(product.id))}>장바구니</button>
+                                    {!cartProductIds.includes(product.id) && (<button type='button'
+                                            onClick={()=>dispatch(addToCart(product.id))}>장바구니</button>)}
+                                    {cartProductIds.includes(product.id) && (<button type='button'
+                                            onClick={()=>dispatch(removeToCart(product.id))}>삭제하기</button>)}
                                 </dd>
                             </dl>
                         </figcaption>

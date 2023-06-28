@@ -6,8 +6,9 @@ import {BiTrashAlt} from 'react-icons/bi';
 
 export default function WishList(){
     const {cartProductIds} = useSelector((state)=>state.cart);
-    // console.log(cartProductIds)
+    console.log(cartProductIds)
     const cartData = productList.products.filter((product)=>cartProductIds.includes(product.id));
+    // console.log(cartData)
     const dispatch = useDispatch();
 
     return (
@@ -44,7 +45,7 @@ export default function WishList(){
                 </p>
                </div> 
             </div>
-            {cartData.length > 1 || <div className='clear'>
+            {cartData.length < 1 && <div className='clear'>
                  <p>장바구니에 담겨있는 상품이 없습니다.</p>
             </div>}
         </div>

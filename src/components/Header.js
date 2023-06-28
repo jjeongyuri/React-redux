@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 export default function Header(){
    const {cartProductIds} = useSelector((state)=>state.cart);
-   console.log(cartProductIds)
+//    console.log(cartProductIds)
 
 
     return (
