@@ -59,49 +59,49 @@
           {
             "id": "9",
             "name": "일리 X7.1 캡슐커피머신 [블랙]",
-            "price": 0,
+            "price": 3,
             "ceil": 387000,
             "imageUrl": "./img/machines_pic09.jpg"
           },
           {
             "id": "10",
             "name": "일리 X7.1 캡슐커피머신 [화이트]",
-            "price": 0,
+            "price": 3,
             "ceil": 387000,
             "imageUrl": "./img/machines_pic10.jpg"
           },
           {
             "id": "11",
             "name": "일리 X7.1 캡슐커피머신 [레드]",
-            "price": 0,
+            "price": 3,
             "ceil": 387000,
             "imageUrl": "./img/machines_pic11.jpg"
           },
           {
             "id": "12",
             "name": "X1 Anniversary 캡슐커피머신 [아몬드]",
-            "price": 0,
+            "price": 2,
             "ceil": 690000,
             "imageUrl": "./img/machines_pic12.jpg"
           },
           {
             "id": "13",
             "name": "X1 Anniversary 캡슐커피머신 [이녹스]",
-            "price": 0,
+            "price": 1,
             "ceil": 790000,
             "imageUrl": "./img/machines_pic13.jpg"
           },
           {
             "id": "14",
             "name": "X1 Anniversary 캡슐커피머신 [블랙]",
-            "price": 0,
+            "price": 2,
             "ceil": 690000,
             "imageUrl": "./img/machines_pic14.jpg"
           },
           {
             "id": "15",
             "name": "X1 Anniversary 캡슐커피머신 [레드]",
-            "price": 0,
+            "price": 2,
             "ceil": 690000,
             "imageUrl": "./img/machines_pic15.jpg"
           }

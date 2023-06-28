@@ -41,6 +41,7 @@
     margin-right: 45px;
     font-size: 12px;
     line-height: 45px;
+    cursor: pointer;
 }
 
 
@@ -84,16 +85,20 @@
     color: #666;
 }
 #machinlist>#list>li>figure>figcaption>dl>dd>button{
-    background-color: #D12420;
+    background-color: rgb(231, 177, 177);
     font-size: 12px;
     text-align: center;
-    color: #fff;
+    color: #524a4a;
     border: none;
     padding: 14px;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
     margin-left: 10px;
+}
+#machinlist>#list>li>figure>figcaption>dl>dd>button.del{
+    background-color: #D12420;
+    color: #fff;
 }
 
 

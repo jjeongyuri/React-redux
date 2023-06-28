@@ -3,13 +3,19 @@ import {BiCheck} from 'react-icons/bi';
 import productList from '../product.json';
 import { addToCart,removeToCart } from '../redux/WishListSlice';
 import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react';
 
 
 export default function Machines(){
     let dispatch = useDispatch();
-    const {cartProductIds} = useSelector((state)=>state.cart)
+    const {cartProductIds} = useSelector((state)=>state.cart);
     // console.log(cartProductIds)
-    // console.log(productList)
+    const [sortBy,setSortBy] = useState('ceil');
+    const sortList = productList.products.sort((a,b)=>{
+        return a[sortBy] > b[sortBy] ? 1 :-1
+    });
+    // console.log(sortList)
+    const onSortChange = (discount) => setSortBy(discount);
 
     return (
         <>
@@ -25,16 +31,16 @@ export default function Machines(){
                개
             </p>
             <ul>
-                <li onClick={()=>productList.products.sort((a,b) => a.ceil - b.ceil)}>낮은가격순
-                 <BiCheck style={{fontSize:15,marginLeft:4}}/>
+                <li onClick={()=>onSortChange('ceil')}>낮은가격순
+                  {sortBy === 'ceil' && <BiCheck style={{fontSize:15,marginLeft:4}}/>}
                 </li>
-                <li onClick={()=>productList.products.sort((a,b) => b.ceil - a.ceil)}>높은가격순
-                    <BiCheck style={{fontSize:15,marginLeft:4}}/>
+                <li onClick={()=>onSortChange('price')}>높은가격순
+                  {sortBy === 'price' && <BiCheck style={{fontSize:15,marginLeft:4}}/>}
                 </li>
             </ul>
             <div id='machinlist'>
                 <ul id="list">
-                {productList.products.map((product)=>(
+                {sortList.map((product)=>(
                         <li key={product.id}>
                         <figure>
                         <img src={product.imageUrl} alt={product.name}/>
@@ -42,9 +48,9 @@ export default function Machines(){
                             <dl>
                                 <dt>{product.name}</dt>
                                 <dd>
-                                    {product.price === 0 || <del>{product.price}
+                                    {product.price <= 3 || (<del>{product.price}
                                          원
-                                    </del>}
+                                    </del>)}
                                     <ins>{product.ceil}
                                         <span>원</span>
                                    </ins>
@@ -53,7 +59,8 @@ export default function Machines(){
                                     {!cartProductIds.includes(product.id) && (<button type='button'
                                             onClick={()=>dispatch(addToCart(product.id))}>장바구니</button>)}
                                     {cartProductIds.includes(product.id) && (<button type='button'
-                                            onClick={()=>dispatch(removeToCart(product.id))}>삭제하기</button>)}
+                                            onClick={()=>dispatch(removeToCart(product.id))}
+                                            className='del'>삭제하기</button>)}
                                 </dd>
                             </dl>
                         </figcaption>
