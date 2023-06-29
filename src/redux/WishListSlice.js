@@ -1,4 +1,7 @@
 import productList from '../product.json';
+
+
+
 const { createSlice } = require("@reduxjs/toolkit");
 
 let cartSlice = createSlice({
