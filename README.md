@@ -9,7 +9,7 @@ React-redux 와 routing을 사용하여 간단한 커피머신 사이트제작
 ### 배포링크
 
 배포방식은 AWS:S3의 간이 배포를 이용하였습니다.</br>
-<a href=>링크 이동하기</a>
+<a href="http://yurijeong.redux.site.s3-website.ap-northeast-2.amazonaws.com">링크 이동하기</a>
 
 ### 개발 도구 및 환경
 
